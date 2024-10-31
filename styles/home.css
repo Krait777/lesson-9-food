@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import './style.css';
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -13,71 +11,54 @@
     border: none;
 }
 
+
 body {
     background: #F0EBE1;
 }
-
 header {
-    display: flex;
     margin: 16px 0;
     padding: 16px 24px;
-    align-items: center;
+    display: flex;
+    align-self: center;
     justify-content: space-between;
     border: 1px solid #2625223D;
     border-radius: 32px;
-
-    h3 {
-        font-family: "Roboto", serif;
-    }
-
-    a {
-        font-family: "Roboto", serif;
-
-    }
-
-    .active {
-        border-bottom: 4px solid red;
-    }
 }
-
+.btn-sub{
+    text-transform: uppercase;
+}
 .container {
-    width: 1312px;
+    width: 1322px;
     margin: auto;
 }
-
+.logo {
+    display: flex;
+    width: 100px;
+    gap: 8px;
+    h3 {
+        font-size: 15px;
+    }
+}
+.nav {
+    display: flex;
+    gap: 24px;
+    a {
+        padding: 8px;
+        color: #A4A19A;
+    }
+    a.active {
+        color: black;
+        font-weight: bold;
+        font-family: "Roboto", serif;
+        border-bottom: 5px solid red;
+    }
+}
 .search {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-
-
-.logo {
-    display: flex;
-    width: 100px;
-    gap: 8px;
-
-    h3 {
-        font-size: 15px;
-    }
-}
-
-.nav {
-    display: flex;
-    gap: 24px;
-
-    a {
-        padding: 8px;
-        color: #A4A19A;
-    }
-
-    a.active {
-        color: black;
-        font-weight: bold;
-    }
-}
-
-.search__input {
+.search_input {
     button {
         width: 37px;
         height: 37px;
@@ -87,20 +68,17 @@ header {
         cursor: pointer;
     }
 }
-
 button {
     background-color: #262522;
     color: white;
     padding: 12px 24px;
     border-radius: 24px;
 }
-
-/* recipe css*/
 .recipes {
+    margin-bottom: 90px;
     .recipes-top {
         text-align: center;
     }
-
     .recipes-btn {
         padding: 4px 8px;
         font-size: 14px;
@@ -108,220 +86,228 @@ button {
         background-color: #EE6352;
         margin-bottom: 8px;
     }
-
     h3 {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Roboto", serif;
         font-size: 40px;
         font-weight: 700;
         line-height: 40px;
         letter-spacing: 0.01em;
+        text-align: center;
         text-transform: uppercase;
-        margin-bottom: 18px;
+        margin-bottom: 20px;
     }
-
     p {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         font-weight: 300;
         line-height: 22.4px;
         letter-spacing: 0.01em;
-        width: 426px;
-        margin: auto;
+        text-align: center;
+        
         font-family: "Roboto", sans-serif;
+        font-size: 16px;
     }
-
-}
-
-
-.recipes-buttons {
-    margin-bottom: 40px;
-
-}
-
-.recipes-cards {
-    margin-left: 199px;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-
-    .card {
-        width: 427px;
-        border-radius: 24px;
-        border: 1px solid #26252229;
-
-        .card-img {}
-
-        .card-text {
-            background: #FFFBF2;
-            border-bottom-right-radius: 24px;
-            border-top-left-radius: 24px;
-            padding: 25px 24px 16px;
-            font-family: "Roboto", sans-serif;
-
-            h4 {
-                font-family: "Montserrat", sans-serif;
-                font-size: 24px;
-                font-weight: 700;
-                line-height: 28.8px;
-                letter-spacing: -0.01;
-                margin-bottom: 12px;
-                font-family: "Roboto", sans-serif;
-            }
-
-            p {
-                width: 379px;
-                margin-bottom: 54px;
-                font-family: "Roboto", sans-serif;
-            }
-
-            div {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-
+    .recipes-buttons {
+        margin-bottom: 70px;
+        display: flex;
+        gap: 17px;
+        justify-content: center;
+        margin-left: 20xp;
+        .button{
+            background-color:#F0EBE1;
+            color: black;
+            border: 1px solid;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Roboto", serif;
+            
+        }
+        .button1{
+            background-color: #9FDC26;
+            color: black;
+            border: 1px solid;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Roboto", serif;
+        }
+        .button2, .button3, .button4, .button5, .button6{
+            color: black;
+            border: 1px solid;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: "Roboto", serif;
+            background-color:#F0EBE1;
+            background: #CDD6DB;
+            opacity: .4;
+        }
+    }
+    img{
+        width: 425px;
+        height: 350px;
+        border-top-left-radius: 22px;
+        border-top-right-radius: 22px;
+    }
+    .recipes-cards {
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px;
+        .card {
+            width: 427px;
+            border-radius: 24px;
+            border: 1px solid #262522;
+          
+            .card-text {
+                background: #FFFBF2;
+                border-bottom-right-radius: 24px;
+                border-bottom-left-radius: 24px;
+                padding: 24px 24px 16px;
+                h4 {
+                    font-family: "Montserrat", sans-serif; 
+                    
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28.8px;
+                    margin-bottom: 12px;
+                }
                 p {
-                    margin-bottom: 0;
-                    font-size: 12px;
-                    font-weight: 500;
-                    line-height: 14.4px;
-                    letter-spacing: 0.01em;
-                    width: auto;
-                    margin: 0;
-                    font-family: "Roboto", sans-serif;
+                    width: 379px;
+                    margin-bottom: 54px;
                 }
-
-                button {
-                    font-size: 14px;
-                    font-weight: 500;
-                    line-height: 14px;
-                    padding: 12px 24px;
-                    text-transform: uppercase;
-                    background-color: transparent;
-                    border: 1px solid #26252229;
-                    color: black;
-                }
-
-                .img-tag {
-                    position: absolute;
-                    margin-left: 310px;
-                    margin-top: -410px;
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    p {
+                        margin-bottom: 0;
+                        font-size: 12px;
+                        font-weight: 500;
+                        line-height: 14.4px;
+                        letter-spacing: 0.01em;
+                        width: auto;
+                        margin: 0;
+                    }
+                    .card-img {
+                        display: flex;
+                        }
+                    button {
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 14px;
+                        padding: 12px 24px;
+                        text-transform: uppercase;
+                        background-color: transparent;
+                        border: 1px solid #26252229;
+                        color: black;
+                    }
                 }
             }
         }
     }
 }
-
-.recipes-buttons {
+.hero {
+    position: relative;
+    width: 100%;
+    max-width: auto;
+    padding: 120px 0;
+    text-align: center;
+    background-image: url(../img/hero-img.png);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 32px;
+   
+    margin-bottom: 16px;
+}
+.image {
+    width: 100%;
+    height: auto;
+}
+.hero-content {
+    width: 869px;
+    margin: auto;
+    h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 80px;
+        margin-bottom: 12px;
+        color: white;
+    }
+    p {
+        color: white;
+        width: 424px;
+        font-size: 21px;
+        margin: auto;
+        font-size: 21px;
+        margin-bottom: 40px;
+    }
+    .hero-btn {
+        background: #F29C33;
+        color: black;
+    }
+}
+.menu {
+    background-color: #C4E5FC;
+    padding: 40px;
+    border-radius: 32px;
+    margin-top: 16px;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-
-    .btn1 {
-        text-transform: uppercase;
-        background-color: #9FDC26;
-        color: black;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    .menu-text {
+        width: 494px;
+        padding-top: 148px;
         font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
+        button.menu-btn1 {
+            margin-bottom: 20px;
+            padding: 4px 8px 4px 8px;
+            border-radius: 12px;
+            background: #EE6352;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        button.menu-btn2 {
+            border: 1px solid #262522;
+            background-color: transparent;
+            color: currentColor;
+            text-transform: uppercase;
+        }
+        h3 {
+            margin-bottom: 12px;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+        p {
+            margin-bottom: 40px;
+            font-weight: 300;
+            line-height: 22px;
+        }
     }
-
-    .btn2 {
-        text-transform: uppercase;
-        background-color: #F0EBE1;
-        color: black;
-        font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
-        line-height: 14px;
-        color: rgba(0, 0, 0, 0.5);
-    }
-
-    .btn3 {
-        text-transform: uppercase;
-        background-color: #F0EBE1;
-        color: #262522;
-        font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
-
-        font-family: "Roboto", serif;
-    }
-
-    .btn4 {
-        text-transform: uppercase;
-        background-color: #F0EBE1;
-        color: black;
-        font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
-        line-height: 14px;
-        color: rgba(0, 0, 0, 0.5);
-    }
-
-    .btn5 {
-        text-transform: uppercase;
-        background-color: #F0EBE1;
-        color: black;
-        font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
-        line-height: 14px;
-        color: rgba(0, 0, 0, 0.5);
-    }
-
-    .btn6 {
-        text-transform: uppercase;
-        background-color: #F0EBE1;
-        color: black;
-        font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
-        line-height: 14px;
-        color: rgba(0, 0, 0, 0.5);
-    }
-
-    .btn7 {
-        text-transform: uppercase;
-        background-color: #F0EBE1;
-        color: black;
-        font-family: "Roboto", sans-serif;
-        margin-bottom: 10px;
-        margin-top: 30px;
-        border: 1px solid;
-        line-height: 14px;
-        color: rgba(0, 0, 0, 0.5);
+    .menu-items {
+        width: 494px;
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #26252229;
+            padding: 18px 0;
+            img {}
+            h4 {
+                font-size: 18px;
+                font-weight: 600;
+                font-family: "Montserrat", sans-serif;
+                text-transform: uppercase;
+            }
+        }
     }
 }
 
-section {
-    h1 {
-        font-size: 80px;
-        color: #F0EBE1;
-        font-weight: 700;
-        font-family: "Montserrat", sans-serif;
-        position: absolute;
-    }
-    .explore-recipes{
-       position: absolute;
-       font-family: "Roboto", sans-serif;
-       font-size: 14px;
-    }
-    .recipes-p{
-        position: absolute;
-        color: #F0EBE1;
-        font-family: "Roboto", sans-serif;
-        font-size: 21px;
-
-    }
-
-    .img--sec {
-      margin-left: 80px;
-      width: 1600px;
-      border-radius: 32px ;
-    }
+.pp{
+    font-family: Arial, Helvetica, sans-serif
+}
+.h1h1{
+    text-transform: uppercase;
+}
+.hero-btn{
+    text-transform: uppercase;
 }
